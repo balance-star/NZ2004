@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            /*
+                【注】一定要先写数据结构，再去写json格式字符串
+            */
+ 
+            var arr = [{
+                id: 1,
+                title: "单品",
+                desc: "【男女同款】Chuck 70 E260",
+                img: "images/boy/xie1.png",
+                price: 799.00
+            }, {
+                id: 2,
+                title: "单品",
+                desc: "【男女同款】One Star Academy Ox",
+                img: "images/boy/xie2.png",
+                price: 639.00
+            }, {
+                id: 3,
+                title: "男女同款",
+                desc: "【男女同款】Pro Leather Ox",
+                img: "images/boy/xie3.png",
+                price: 639.00
+            },{
+                id: 4,
+                title: "男女同款",
+                desc: "【男女同款】Pro Leather Ox",
+                img: "images/boy/xie4.png",
+                price: 639.00
+            },{
+                id: 5,
+                title: "单品",
+                desc: "【男女同款】Chuck 70",
+                img: "images/girl/4.png",
+                price: 569.00
+            }, {
+                id: 6,
+                title: "单品",
+                desc: "【男女同款】Run Star Hike",
+                img: "images/girl/4.png",
+                price: 739.00
+            }, {
+                id: 7,
+                title: "男女同款",
+                desc: "【男女同款】Chuck 70",
+                img: "images/girl/4.png",
+                price: 599.00
+            },{
+                id: 8,
+                title: "男女同款",
+                desc: "【男女同款】Pro Leather Ox",
+                img: "【男女同款】Converse x ROKIT Chuck 70",
+                price: 7999.00
+            }
+        ];
+ 
+            
+            //必须将上述的数据转成json格式字符串
+            var str = JSON.stringify(arr);
+            document.write(str);
+        </script>
+    </head>
+    <body>
+         
+    </body>
+</html>
