@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,18 @@
     <link rel="stylesheet" href="libs/font/iconfont.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/css.css">
-    
+    <link rel="stylesheet" href="css/index.scss">
+
     <!-- <script src="js/jquery-1.10.1.min.js"></script> -->
     <script src="js/utils.js"></script>
-    <script src = 'js/require.js' async = 'true' defer  data-main = "js/main"></script>
-   
+    <script src='js/require.js' async='true' defer data-main="js/main"></script>
+
     <!-- <link rel="stylesheet" href="libs/font/iconfont.js">
     
     <script src="libs/font/iconfont.js"></script> -->
 </head>
-<body style="height: 8000px;">
+
+<body>
     <!-- 头部开始 -->
     <div class="stickheader">
         <div class="header">
@@ -27,32 +30,42 @@
                 <div class="iconfont icon-liaotianqingqiu shil1" title="聊天"></div>
                 <div class="shop">
                     <div class="shil2">0</div>
-                    <span >购物车 &nbsp;</span>
+                    <span>购物车 &nbsp;</span>
                 </div>
                 <div class="log" title="登录/注册">
-                    <div class="iconfont icon-weidenglu-touxiang shil3 " ></div>
+                    <div class="iconfont icon-weidenglu-touxiang shil3 "></div>
                     <span class="shil3">注册 &nbsp;</span>
                     <span class="shil3">&nbsp;/&nbsp; </span>
                     <span class="shil3">登录</span>
-                
+
                 </div>
             </div>
         </div>
 
         <div class="navigation">
             <div class="navigation-content">
-                <li>男的<div></div></li>
-                <li>女的<div></div></li>
-                <li>儿童<div></div></li>
-                <li>店铺分布<div></div></li>
-                <li>优惠专区<div></div></li>
+                <li id="head1">男的<div></div>
+                </li>
+                <li>女的<div></div>
+                </li>
+                <li>儿童<div></div>
+                </li>
+                <li>店铺分布<div></div>
+                </li>
+                <li>优惠专区<div></div>
+                </li>
+            </div>
+            <div class="navigation-expended" id="show1">
+                <ul>
+                    <!-- 假数据 -->
+                </ul>
             </div>
         </div>
 
 
-    
-    
-    
+
+
+
     </div>
 
     <div class="div1" id="div1">
@@ -70,7 +83,7 @@
             <li>EARTH TONE SUEDE</li>
             <li>RENEW</li>
             <li>JACK PURCELL</li>
-        </ol> 
+        </ol>
         <a href="javascript:;" id="goPrev">&laquo;</a>
         <a href="javascript:;" id="goNext">&raquo;</a>
     </div>
@@ -79,7 +92,7 @@
 
     <div class="brand">
         <div class="category-title">
-            <h1>————————————————  热卖单品  ————————————————</h1>
+            <h1>———————————————— 热卖单品 ————————————————</h1>
         </div>
     </div>
 
@@ -101,12 +114,12 @@
             <a href="" class="text">戴的</a>
             <a href="" class="img"><img src="images/shubao.jpg" alt=""></a>
         </div>
-       
+
     </div>
-    
+
 
     <div class="goods_box">
-    
+
         <ul>
             <!-- 假数据 -->
 
@@ -116,12 +129,12 @@
 
     <div class="hot_shop">
         <div class="title">
-            <h1>————————————————  新品推荐  ————————————————</h1>
+            <h1>———————————————— 新品推荐 ————————————————</h1>
         </div>
     </div>
 
     <div class="sads_box">
-    
+
         <ul>
             <!-- 假数据 -->
 
@@ -140,16 +153,189 @@
             <p class="p_two">BRAND LOGO TEE</p>
             <button class="button_two">
                 <div>查看更多</div>
-                <div class="iconfont icon-dajiantouyou icon1"></div></button>
+                <div class="iconfont icon-dajiantouyou icon1"></div>
+            </button>
         </div>
         <div class="two">
             <img src="images/02touts_200515_bs.jpg" alt="">
             <p class="p_two">夏日小白鞋完全指南E</p>
             <button class="button_two">
                 <div>查看更多</div>
-                <div class="iconfont icon-dajiantouyou icon1"></div></button>
+                <div class="iconfont icon-dajiantouyou icon1"></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="picture_three">
+        <div class="one">
+            <img src="images/ct70_pc_200416.jpg" alt="">
+            <p class="p_three">KIDS</p>
+            <button class="button_three">
+                <div>查看更多</div>
+                <div class="iconfont icon-dajiantouyou icon1"></div>
+            </button>
+        </div>
+        <div class="two">
+            <img src="images/kids_pc_200416.jpg" alt="">
+            <p class="p_three">CHUCK 70</p>
+            <button class="button_three">
+                <div>查看更多</div>
+                <div class="iconfont icon-dajiantouyou icon1"></div>
+            </button>
+        </div>
+        <div class="three">
+            <img src="images/jp_pc_200416.jpg" alt="">
+            <p class="p_three">JACK PURCELL</p>
+            <button class="button_three">
+                <div>查看更多</div>
+                <div class="iconfont icon-dajiantouyou icon1"></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="information attention">
+        <h1>关注CONVERSE</h1>
+        <p>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。</p>
+        <div class="information-link clearfix follow">
+            <a target="_blank"
+                href="http://e.weibo.com/chinaconverse?ref=http%3A%2F%2Fweibo.com%2F2704656644%2Ffollow%3Ffrom%3Dprofile%26wvr%3D3.6%26loc%3Dtagfollow"
+                rel="nofollow" class="iconfont icon-weibo icon2"></a>
+            <a id="weixin-btn" href="javascript:void(0);" class="iconfont icon-weixin icon2" rel="nofollow"></a>
+        </div>
+    </div>
+
+    <div class="sitemap">
+        <div class="category-title"></div>
+        <dl>
+            <dt><a href="/men/category.htm?iid=bonvm06012015">男的</a></dt>
+            <dd><a href="/men-all_star/category.htm?iid=bonvm06012015">CHUCK TAYLOR ALL STAR</a></dd>
+            <dd><a href="/men-cons/category.htm?iid=bonvm06012015">CONVERSE CONS</a></dd>
+            <dd><a href="/men-jack_purcell/category.htm?iid=bonvm06012015">JACK PURCELL</a></dd>
+            <dd class="mgb20"><a href="/Chuck_II/category.htm?iid=bonvmctii08312015">CHUCK II</a></dd>
+            <dd><a href="/men-sneakers/category.htm?iid=bonvm06012015">踩的</a></dd>
+            <dd><a href="/men-clothing/category.htm?iid=bonvm06012015">穿的</a></dd>
+            <dd><a href="/men-accessories/category.htm?iid=bonvm06012015">戴的</a></dd>
+            <dd><a href="/men/discount/category.htm?iid=bonvm06012015">优惠</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="/women/category.htm?iid=bonvf06012015">女的</a></dt>
+            <dd><a href="/women-all_star/category.htm?iid=bonvf06012015">CHUCK TAYLOR ALL STAR</a></dd>
+            <dd><a href="/women-cons/category.htm?iid=bonvf06012015">CONVERSE CONS</a></dd>
+            <dd><a href="/women-jack_purcell/category.htm?iid=bonvf06012015">JACK PURCELL</a></dd>
+            <dd class="mgb20"><a href="/Chuck_II/category.htm?iid=bonvfctii08312015">CHUCK II</a></dd>
+            <dd><a href="/women-sneakers/category.htm?iid=bonvf06012015">踩的</a></dd>
+            <dd><a href="/women-clothing/category.htm?iid=bonvf06012015">穿的</a></dd>
+            <dd><a href="/women-accessories/category.htm?iid=bonvf06012015">戴的</a></dd>
+            <dd><a href="/women/discount/category.htm?iid=bonvf06012015">优惠</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="/kids/category.htm?iid=bonvk06012015">儿童</a></dt>
+            <dd><a href="/kids-all_star/category.htm?iid=bonvk06012015">CHUCK TAYLOR ALL STAR</a></dd>
+            <dd><a href="/kids-cons/category.htm?iid=bonvk06012015">CONVERSE CONS</a></dd>
+            <dd><a href="javascript:void(0);">&nbsp;&nbsp;&nbsp;</a></dd>
+            <dd class="mgb20"><a href="javascript:void(0);">&nbsp;&nbsp;&nbsp;</a></dd>
+            <dd><a href="/kids-sneakers/category.htm?iid=bonvk06012015">踩的</a></dd>
+            <dd><a href="/kids-clothing/category.htm?iid=bonvk06012015">穿的</a></dd>
+            <dd><a href="/kids-accessories/category.htm?iid=bonvk06012015">戴的</a></dd>
+            <dd><a href="/kids/discount/category.htm?iid=bonvk06012015">优惠</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="http://www.converse.com/uk/en/country-language-selector" rel="nofollow"
+                    target="_blank">GLOBAL</a></dt>
+            <dd><a href="http://www.converse.com/uk/en/country-language-selector" rel="nofollow"
+                    target="_blank">CONVERSE GLOBAL SITES</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="/myshop/updatememberinfo.htm" rel="nofollow">我的账户</a></dt>
+            <dd><a url="/landingpage/vip.htm" rel="nofollow" class="PCAccountCenter">会员中心</a></dd>
+            <dd><a url="/sales/orderlist.htm" rel="nofollow" type="PCbottom_current_order"
+                    class="PCAccountBottom">现有订单</a></dd>
+            <dd><a url="/sales/orderhistorylist.htm" rel="nofollow" type="PCbottom_history_order"
+                    class="PCAccountBottom">过去订单</a></dd>
+            <dd><a url="/sales/returnorderlist.htm" rel="nofollow" type="PCbottom_return_order"
+                    class="PCAccountBottom">退换货</a></dd>
+            <dd><a url="/myshop/updatememberinfo.htm" rel="nofollow" type="PCbottom_account_setting"
+                    class="PCAccountBottom">账户设置</a></dd>
+            <dd><a url="/member/addressList.htm" rel="nofollow" type="PCbottom_address_list"
+                    class="PCAccountBottom">地址簿</a></dd>
+            <dd><a url="/myshop/myCoupon.htm" rel="nofollow" type="PCbottom_my_coupon" class="PCAccountBottom">我的优惠券</a>
+            </dd>
+            <dd><a url="/myaccount/myfavorite.htm" rel="nofollow" type="PCbottom_my_favourite"
+                    class="PCAccountBottom">我的收藏</a></dd>
+            <dd><a url="/myshop/commentsview.htm" rel="nofollow" type="PCbottom_my_comment"
+                    class="PCAccountBottom">我的评论</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="/helpcenter/guide_top.htm" rel="nofollow" target="_blank">帮助和购物指南</a></dt>
+            <dd><a href="/helpcenter/my_account.htm" rel="nofollow" target="_blank">账户</a></dd>
+            <dd><a href="/helpcenter/order.htm" rel="nofollow" target="_blank">订单</a></dd>
+            <dd><a href="/helpcenter/size.htm" rel="nofollow" target="_blank">尺码</a></dd>
+            <dd><a href="/helpcenter/return_refund.htm" rel="nofollow" target="_blank">退货和退款</a></dd>
+            <dd><a href="/helpcenter/exchange.htm" rel="nofollow" target="_blank">换货</a></dd>
+            <dd><a href="/helpcenter/delivery.htm" rel="nofollow" target="_blank">配送</a></dd>
+            <dd><a href="/helpcenter/contact.htm" rel="nofollow" target="_blank">联系我们</a></dd>
+            <dd><a href="/helpcenter/FAQ.htm" rel="nofollow" target="_blank">常见问题</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="https://www.nike.com/cn/zh_cn/" rel="nofollow">NIKE</a></dt>
+            <dd><a href="https://www.nike.com/cn/zh_cn/c/nike-plus" rel="nofollow">NIKE+</a></dd>
+            <dd><a href="https://www.nike.com/cn/zh_cn/c/jordan" rel="nofollow">JORDAN</a></dd>
+        </dl>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="footer">
+            <ul class="footer-list">
+                <li><a href="/helpcenter/aboutus.htm" rel="nofollow">关于我们</a></li>
+                <li><a href="/helpcenter/guide_top.htm" rel="nofollow">帮助和购物指南</a></li>
+                <li><a href="/helpcenter/privacyterm.htm" rel="nofollow">隐私政策</a></li>
+                <li><a href="/helpcenter/termofuse.htm" rel="nofollow">使用规则</a></li>
+            </ul><a href="/index.htm">
+                <div class="primary-logo">
+                    <!-- <span>Converse</span> -->
+                </div>
+            </a>
+            <p class="footer-bottom">@匡威体育用品（中国）有限公司 保留所有权利&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" rel="nofollow"
+                    href="http://www.beian.miit.gov.cn/publish/query/indexFirst.action">沪ICP备11044134号-2</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" rel="nofollow"
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002001667"><img
+                        src="//image.converse.com.cn/images/homepage/beiAn.png" />沪公网安备 31011002001667号</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a
+                    href="http://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&serial=9031000020181129112802000003424202-SAIC_SHOW_310000-20160711190436107137&signData=MEYCIQC9HsYxKQLS0Zda9mFwwgVYrMvfSyMwCfNMkHehHAAwMwIhAPE78ZUrn59Vzu+CTF5yVLa3GSbDD+bpmLY3qUEAIrZI"
+                    rel="nofollow" target="_blank"><img
+                        src="//image.converse.com.cn/images/commons/business-license.png">电子营业执照</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="/company-license.htm" rel="nofollow" target="_blank">公司证照</a></p>
+            <div class="tip-for-fraud"><a><img
+                        src="//image.converse.com.cn/images/cautionIcon.png" /></a>
+            </div>
         </div>
     </div>
     
+    
+    
+    <!-- coupon弹层 -->
+    <!-- <div class="popupbgCounon" style="height: 100%; "></div>
+    <div class="message-popupone counon-popup" style="">
+        <div class="container register_cn" style="">
+            <div class="s-p-top">欢迎加入CONVERSE会员</div>
+            <p>欢迎加入CONVERSE会员，我们已向您的账户发放了</br>“10元入会礼券”， 请至“我的优惠券”查看使用详情。</p><button
+                class="continue-shopping-btn">继续购物</button>
+        </div>
+        <div class="container birthday_cn" style="">
+            <div class="s-p-top">生日快乐</div>
+            <p>我们已向您的账户发放了“20元生日礼券”， </br>请至“我的优惠券”查看使用详情。</p><button class="continue-shopping-btn">继续购物</button>
+        </div>
+        <div class="closeBtn close-message"></div>
+    </div> -->
+    
+    
 </body>
+
+</html>
+
+
+
+
+</body>
+
 </html>

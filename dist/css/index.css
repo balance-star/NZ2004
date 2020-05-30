@@ -17,7 +17,8 @@ img {
   border: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000000; }
 
 /* 头部 */
 .stickheader {
@@ -114,6 +115,39 @@ a {
 
 .navigation-content li:last-child {
   margin-right: 0; }
+
+.navigation-expended {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  display: none;
+  opacity: 0; }
+
+.navigation-expended ul {
+  width: 800px;
+  position: absolute;
+  left: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid #999999; */
+  float: left; }
+
+.navigation-expended ul li {
+  width: 20%; }
+
+.navigation-expended ul .show_item {
+  float: left;
+  position: relative;
+  margin-right: 5%;
+  font-size: 10px;
+  text-align: center; }
+
+.navigation-expended ul .show_pic img {
+  width: 50px;
+  height: 50px; }
 
 /* 轮播图 */
 #div1 {
@@ -297,3 +331,193 @@ a {
   position: relative;
   top: -25px;
   left: -40px; }
+
+/* 第二部分 */
+.smell_box2 {
+  width: 1254px;
+  position: absolute;
+  bottom: -2500px;
+  font-size: 20px;
+  line-height: 50px;
+  left: 20%;
+  height: 50px;
+  background: #464646;
+  padding-left: 2%; }
+
+.picture_three {
+  position: absolute;
+  bottom: -2930px;
+  left: 20%; }
+
+.picture_three .one {
+  float: left;
+  width: 410px;
+  margin-right: 25px; }
+
+.picture_three .two {
+  float: left;
+  width: 410px;
+  /* float: left; */
+  margin-right: 25px; }
+
+.picture_three .three {
+  float: left;
+  width: 410px;
+  /* float: left; */ }
+
+.picture_three img {
+  width: 100%; }
+
+.p_three {
+  font-size: 25px;
+  padding: 10px 0px 10px 0px; }
+
+.button_three {
+  width: 200px;
+  font-size: 20px;
+  color: #999999;
+  border: none;
+  /* float: left; */ }
+
+.button_three div {
+  /* width: 200px; */
+  font-size: 20px;
+  height: 40px;
+  padding-top: 10px;
+  margin-left: 48px;
+  float: left; }
+
+.button_three .icon1 {
+  /* width: 200px; */
+  position: relative;
+  top: -25px;
+  left: -40px; }
+
+.information {
+  position: absolute;
+  bottom: -3260px;
+  height: 200px;
+  margin: 80px 0 0 0;
+  padding-top: 45px;
+  background: #464646;
+  width: 100%;
+  color: #FFF;
+  text-align: center; }
+
+.information .information-link {
+  width: 210px; }
+
+.information .information-link {
+  margin: 37px auto 300px;
+  margin-left: 17%;
+  height: auto;
+  width: 525px;
+  text-align: center;
+  padding-bottom: 38px; }
+
+.icon2 {
+  font-size: 50px; }
+
+/* 尾部 */
+.sitemap {
+  width: 1245px;
+  position: absolute;
+  bottom: -3400px;
+  left: 20%;
+  /* background: yellow; */
+  height: 100px; }
+
+.sitemap .category-title {
+  border-bottom: 1px solid #464646; }
+
+.sitemap dl {
+  width: 24%;
+  text-align: center;
+  display: inline-block;
+  /* *display: inline; */
+  zoom: 1;
+  vertical-align: top;
+  min-height: 280px;
+  padding-top: 40px; }
+
+.sitemap dl:nth-child(6) {
+  width: 33%; }
+
+.sitemap dl:nth-child(7) {
+  width: 33%; }
+
+.sitemap dl:nth-child(8) {
+  width: 33%; }
+
+.sitemap dt {
+  margin-bottom: 20px;
+  font-size: 20px; }
+
+.sitemap dd.mgb20 {
+  margin-bottom: 20px; }
+
+.footer-wrapper {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: -4200px;
+  background-color: #000;
+  color: #FFF;
+  z-index: 100; }
+
+.footer {
+  height: 200px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  text-align: center; }
+
+.footer ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; }
+
+.footer .footer-list li {
+  display: inline-block;
+  /* *display: inline; */
+  zoom: 1;
+  margin: 0 10px; }
+
+.footer .footer-list li a {
+  color: #fff; }
+
+.primary-logo {
+  width: 133px;
+  height: 100px;
+  position: absolute;
+  background: url(../images/kuangwei/QQ图片20200524140402.png) 0 0 no-repeat transparent;
+  left: 50%;
+  font-size: inherit;
+  top: 11%;
+  margin: -10px 0 0 -66px;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5); }
+
+.footer .footer-bottom {
+  bottom: 70px;
+  display: block;
+  margin: 12px auto;
+  position: absolute;
+  text-align: center;
+  width: 103%;
+  left: 0%; }
+
+.footer .footer-bottom a {
+  color: #fff; }
+
+.tip-for-fraud {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 62%;
+  left: 44%; }
