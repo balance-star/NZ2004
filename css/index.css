@@ -60,12 +60,13 @@ button{
   float: right;
   margin-right: 15px; }
 
-.log {
+/* .log {
   float: right;
+  width: 150px;
   margin-right: 50px;
   line-height: 80px;
   color: #ffffff;
-  font-size: 12px; }
+  font-size: 12px; } */
 
 .shil2 {
   font-size: 30px;

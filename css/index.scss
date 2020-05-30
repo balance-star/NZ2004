@@ -69,24 +69,7 @@ a{
     @include float-right;
     margin-right: 15px;
 }
-.log{
-    @include float-right;
 
- 
-    margin-right: 50px;
-
-    line-height: 80px;
-    color: #ffffff;
-    font-size: 12px;
-    .shil3{
-
-        height: 50px;
-        /* background: #ffffff; */
-        @include float-right;
-
-    }
-
-}
 
 .shop{
     @include float-right;

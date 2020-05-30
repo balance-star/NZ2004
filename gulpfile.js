@@ -87,6 +87,27 @@ gulp.task("data",  () => {
 
 })
 
+gulp.task("php1",  () => {
+    return gulp.src("php/user/*.php")
+    .pipe(gulp.dest("dist/php/user"))
+    .pipe(connect.reload());
+
+})
+
+gulp.task("php2",  () => {
+    return gulp.src("php/*.php")
+    .pipe(gulp.dest("dist/php"))
+    .pipe(connect.reload());
+
+})
+
+gulp.task("html",  () => {
+    return gulp.src("html/*.html")
+    .pipe(gulp.dest("dist/html"))
+    .pipe(connect.reload());
+
+})
+
 const scss = require("gulp-sass");
 const minifyCSS = require("gulp-minify-css");
 const rename = require("gulp-rename");
@@ -111,6 +132,15 @@ gulp.task("scss2",  () => {
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
+gulp.task("scss3",  () => {
+    return gulp.src("css/login-register.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("login-register.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
 
 // gulp.task('build', gulp.parallel('copy-html', 'image', 'script', 'data', 'scss1', 'scss2'), function(){
 //     console.log("建立成功");
@@ -118,7 +148,7 @@ gulp.task("scss2",  () => {
 // gulp.task("build", ["copy-html", 'images', "scripts", "data", "scss1", "scss2"], function(){
 //     console.log("项目建立成功");
 // })
-gulp.task('build',gulp.series(gulp.parallel('copy-html', 'image1','image2','image3','image4','image5','image6','image7','image8','image9', 'script', 'data', 'scss1', 'scss2')), function(){
+gulp.task('build',gulp.series(gulp.parallel('copy-html', 'image1','image2','image3','image4','image5','image6','image7','image8','image9', 'script', 'data', 'scss1', 'scss2','php1','php2','html','scss3')), function(){
     console.log("建立成功");
 });
 
@@ -147,6 +177,22 @@ gulp.task("watch", function(){
     gulp.watch("css/css.scss", function(){
         gulp.src("css/css.scss")
         .pipe(gulp.dest("dist/css"));
+    });
+    gulp.watch("css/login-register.scss", function(){
+        gulp.src("css/login-register.scss")
+        .pipe(gulp.dest("dist/css"));
+    });
+    gulp.watch("php/user/*.php", function(){
+        gulp.src("php/user/*.php")
+        .pipe(gulp.dest("dist/php/user"));
+    });
+    gulp.watch("php/*.php", function(){
+        gulp.src("php/*.php")
+        .pipe(gulp.dest("dist/php"));
+    });
+    gulp.watch("html/*.html", function(){
+        gulp.src("css/index.scss")
+        .pipe(gulp.dest("dist/html"));
     });
     // gulp.watch("*.{jpg,png}", ['image']);
     // gulp.watch(["*.json", "!package.json"], ['data']);

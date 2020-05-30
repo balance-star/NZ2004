@@ -11,7 +11,8 @@ require.config({
         "chat":"chat",
         "danpin":"danpin",
         "xinpin":"xinpin",
-        "caidan":"caidan"
+        "caidan":"caidan",
+        
     },
     shim: {
         //jquery.cookie 是依赖于 jquery开发
@@ -33,6 +34,10 @@ require(["lunbo","chat","danpin","xinpin","caidan"], function(lunbo,chat,danpin,
     xinpin.xinpin();
     caidan.caidan();
     caidan.daohang();
+    // index.index();
+    // login.login();
+    // register.register();
+
 
 
 })
