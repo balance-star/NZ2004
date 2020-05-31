@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 // 头部开始
 $width:100%;
 $height:100%;
@@ -14,7 +18,7 @@ button {
 body {
   height: 100%;
   width: 100%; 
-  background: url(../images/denglu.jpg) no-repeat 0px 170px;}
+  background:#ffffff;}
 
 li {
   list-style: none; }
@@ -209,36 +213,157 @@ a {
 .islogin ul:last-child {
     display: block;
 }
-
-  /* 登录界面 */
-  .login-form{
-    width: 400px;
-    height: 400px;
-    left: 65%;
-    background: #ffffff;
-    overflow: hidden;
-    position: relative;
-    top: 291px;
-    }
-  .login-form h1{
-    font-size: 30px;
-    color: #464646;
-    text-align: center;
-  }
-  .login-form form{
-    height: 300px;
-  }
-  .login-form form input {
-    height: 28px;
-    width: 300px;
   
-    margin: 41px 44px 10px 52px;
-}
-.login-form form button {
-  width: 258px;
-    margin: 42px 72px 0px 70px;
-    color: #fff;
-    background: #000;
-    height: 37px;
 
+
+ul,
+ol {
+    list-style: none;
+}
+h3 {
+    height: 40px;
+}
+button:disabled {
+    cursor: not-allowed;
+}
+.shopping {
+  width: 850px;
+    margin: 100px auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    position: relative;
+    top: 195px;
+    height: 400px;
+}
+.shopping .left {
+    float: left;
+}
+.shopping .right {
+    float: right;
+    font-size: 32px;
+}
+.shopping .girlImg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: move;
+}
+.shopping .girlImg img {
+    width: 100%;
+    height: 100%;
+}
+.shopping .girlImg span {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: rgba(255, 255, 0, 0.3);
+    left: 0;
+    top: 0;
+}
+.imgList {
+    width: 220px;
+    margin-top: 20px;
+}
+.imgList li {
+    float: left;
+    margin-right: 8px;
+    border: 2px solid transparent;
+}
+.imgList .ac {
+    border: 2px solid skyblue;
+}
+.imgList li img {
+    width: 40px;
+    display: block;
+}
+.right h3{
+  margin-bottom: 22px;
+}
+.price {
+    height: 50px;
+    font-size: 30px;
+    color: goldenrod;
+    font-weight: bold;
+}
+.priceList {
+    overflow: hidden;
+    margin: 20px 0;
+}
+.priceList li {
+  float: left;
+  height: 40px;
+  line-height: 30px;
+  padding: 9px 10px;
+  border: 2px solid #999;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.priceList .ac {
+    border: 2px solid #532a2a;
+}
+.changeNum {
+    position: relative;
+    margin: 20px 0;
+}
+.changeNum input {
+    width: 40px;
+    height: 41px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+}
+.changeNum button {
+    height: 22px;
+    width: 20px;
+    background: none;
+    border: 1px solid #ccc;
+    position: absolute;
+}
+.changeNum .addBtn {
+    left: 41px;
+    top: 8px;
+}
+.changeNum .subBtn {
+    left: 41px;
+    top: 29px;
+}
+.okBtn {
+    height: 30px;
+    width: 100px;
+}
+.bigBox {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 230px;
+    display: none;
+    overflow: hidden;
+}
+.bigBox img {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background: #ffffff;
+}
+
+.shopCart {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    color: #464644;
+}
+.shopNum {
+    width: 60px;
+    height: 25px;
+    background: red;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+}
+.active {
+    width: 25px;
+    height: 25px;
+    background: skyblue;
+    position: absolute;
 }

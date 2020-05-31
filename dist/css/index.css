@@ -42,7 +42,8 @@ a {
   float: left; }
 
 .right-header {
-  float: right; }
+  float: right;
+  width: 467px; }
 
 .shil1 {
   font-size: 30px;
@@ -390,7 +391,7 @@ a {
   padding-top: 45px;
   background: #464646;
   width: 100%;
-  color: #FFF;
+  color: #fff;
   text-align: center; }
 
 .information .information-link {
@@ -451,7 +452,7 @@ a {
   position: absolute;
   bottom: -4200px;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   z-index: 100; }
 
 .footer {
@@ -510,3 +511,31 @@ a {
   position: absolute;
   top: 62%;
   left: 44%; }
+
+/* 修改 */
+.user ul:first-child {
+  display: block; }
+
+.user ul:last-child {
+  display: none; }
+
+.user ul li a {
+  color: #fff;
+  font-size: 12px; }
+
+.user ul li {
+  float: left;
+  line-height: 78px;
+  padding: 0 10px; }
+
+.right-header .shil3 {
+  height: 50px;
+  margin-right: 30px;
+  font-size: 30px;
+  float: right; }
+
+.islogin ul:first-child {
+  display: none; }
+
+.islogin ul:last-child {
+  display: block; }

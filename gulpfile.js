@@ -141,6 +141,27 @@ gulp.task("scss3",  () => {
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
+gulp.task("scss4",  () => {
+    return gulp.src("css/shop.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("shop.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+
+gulp.task("scss5",  () => {
+    return gulp.src("css/fangda.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("fangda.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+
+
 
 // gulp.task('build', gulp.parallel('copy-html', 'image', 'script', 'data', 'scss1', 'scss2'), function(){
 //     console.log("建立成功");
@@ -148,7 +169,7 @@ gulp.task("scss3",  () => {
 // gulp.task("build", ["copy-html", 'images', "scripts", "data", "scss1", "scss2"], function(){
 //     console.log("项目建立成功");
 // })
-gulp.task('build',gulp.series(gulp.parallel('copy-html', 'image1','image2','image3','image4','image5','image6','image7','image8','image9', 'script', 'data', 'scss1', 'scss2','php1','php2','html','scss3')), function(){
+gulp.task('build',gulp.series(gulp.parallel('copy-html', 'image1','image2','image3','image4','image5','image6','image7','image8','image9', 'script', 'data', 'scss1', 'scss2','php1','php2','html','scss3','scss4','scss5')), function(){
     console.log("建立成功");
 });
 

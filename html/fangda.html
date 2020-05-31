@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>注册</title>
-    <script src="../js/utils.js"></script>
+    <meta charset="utf-8">
+    <title>具体详细</title>
+    <link rel="stylesheet" href="../css/fangda.css">
     <link rel="stylesheet" href="../libs/font/iconfont.css">
-    <link rel="stylesheet" href="../css/login-register.css">
 </head>
-<body style="background: url(../images/lunbo/lunbo4.jpg) no-repeat 0px 170px;">
+
+<body>
     <div class="stickheader">
         <div class="header">
             <img src="../images/kuangwei/QQ图片20200524140324.png" alt="">
@@ -62,15 +62,42 @@
 
 
     </div>
-    <div class="login-form">
-        <h1>注册</h1>
-    <form>
-        <label><input type="text" id="userInput" placeholder="请输入用户名"></label>
-        <label><input type="password" id="pwdInput" placeholder="请输入密码"></label>
-        <button id="btn">注册</button>
-
-    </form>
+    <div class="shopping" id="shopping">
+        <div class="left">
+            <div class="girlImg" id="box">
+                <img id="girl" src="../images/bag/4.png">
+                <span></span>
+            </div>
+            <ol id="imgList" class="imgList">
+                <li><img src="../images/colthes/1.png"></li>
+                <li><img src="../images/colthes/2.png"></li>
+                <li><img src="../images/colthes/3.png"></li>
+                <li><img src="../images/colthes/4.png"></li>
+            </ol>
+        </div>
+        <div class="right">
+            <h3>[匡威] ALLINT clothes </h3>
+            <div id="price" class="price"><em>480-99988</em> 元</div>
+            <ul id="priceList" class="priceList">
+                <li>条纹款</li>
+                <li>白色款</li>
+                <li>黑色款</li>
+                <li>橘色款</li>
+            </ul>
+            <div id="changeNum" class="changeNum">
+                <input type="text" value="1">
+                <button class="addBtn" type="button">+</button>
+                <button class="subBtn" type="button" disabled>-</button>
+            </div>
+            <button id="okBtn" class="okBtn" type="button" disabled>加入购物车</button>
+        </div>
+        <div id="bigBox" class="bigBox"><img src="../images/bag/4.png" alt=""></div>
     </div>
-    <script src="../js/register.js"></script>
+    <div id="shopCart" class="shopCart">
+        购物车
+        <p id="shopNum" class="shopNum">0</p>
+    </div>
+    <script src="../js/fangda.js"></script>
 </body>
+
 </html>

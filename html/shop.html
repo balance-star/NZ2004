@@ -3,48 +3,105 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <script type='text/javascript' src='js/parabola.js'></script>
-    <link rel="stylesheet" href="css/shop.css">
-    <script src="../js/shop.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <!-- 
+            1、先去实现静态页面
+            2、如何实现js部分
+         -->
 
-    <script src="">
-        // bejson.com 格式化json数据
-        
-    </script>
-    
+    <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type='text/javascript' src='../js/parabola.js'></script>
+    <script type='text/javascript' src='../js/shop.js'></script>
+    <link rel="stylesheet" href="../libs/font/iconfont.css">
+    <link rel="stylesheet" href="../css/shop.css">
 </head>
 
 <body>
 
-    <button id='clearBtn'>清空购物车</button>
-    <!-- 商品列表 -->
-    <div class="good_box">
+    <div class="stickheader">
+        <div class="header">
+            <img src="../images/kuangwei/QQ图片20200524140324.png" alt="">
+            <div class="right-header">
+                <div class="iconfont icon-bangzhu shil1" title="帮助"></div>
+                <div class="iconfont icon-sousuo-tianchong shil1" title="搜索"></div>
+                <div class="iconfont icon-liaotianqingqiu shil1" title="聊天"></div>
+                <div class="shop">
+                    <div class="shil2">0</div>
+                    <span>购物车 &nbsp;</span>
+                </div>
 
-        <ul>
-            <!-- 假数据 -->
+                <div class="iconfont icon-weidenglu-touxiang shil3 ">
+                </div>
+                <!-- <div class="user" id="user" title="登录/注册">
+                    <ul>
+                        <li><a href="./html/login.html">登录</a></li>
+                        <li><a href="./html/register.html">注册</a></li>
 
-        </ul>
-
-    </div>
-
-    <!-- 右边购物车 -->
-    <div class="sc_right">
-        <div class="sc_pic">
-            <!-- 购物车内商品的数量 -->
-            <div class="sc_num">
-                0
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">欢迎您，<b></b></a></li>
+                        <li id="exit"><a href="javascript:;">退出</a></li>
+                    </ul>
+                </div> -->
             </div>
         </div>
 
-        <ul>
-            
-        </ul>
-    </div>
-    <div id='ball'></div>
+        <div class="navigation">
+            <div class="navigation-content">
+                <li id="head1">男的<div></div>
+                </li>
+                <li>女的<div></div>
+                </li>
+                <li>儿童<div></div>
+                </li>
+                <li>店铺分布<div></div>
+                </li>
+                <li>优惠专区<div></div>
+                </li>
+            </div>
+            <div class="navigation-expended" id="show1">
+                <ul>
+                    <!-- 假数据 -->
+                </ul>
+            </div>
+        </div>
 
+
+
+
+
+    </div>
+
+    <div class="shop-car">
+        <button id='clearBtn'>清空购物车</button>
+        <!-- 商品列表 -->
+        <button id='someBtn'><a href="../html/fangda.html">其中详细列表</a></button>
+        <div class="good_box">
+
+            <ul>
+                <!-- 假数据 -->
+
+            </ul>
+
+        </div>
+
+        <!-- 右边购物车 -->
+        <div class="sc_right">
+            <div class="sc_pic">
+                <!-- 购物车内商品的数量 -->
+                <div class="sc_num">
+                    0
+                </div>
+            </div>
+
+            <ul>
+
+            </ul>
+        </div>
+        <div id='ball'></div>
+    </div>
 </body>
 
-</html
+</html>
