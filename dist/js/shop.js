@@ -153,11 +153,11 @@ $(function () {
     //给右侧的购物车添加移入移出事件
     $(".sc_right").mouseenter(function () {
         $(this).stop(true).animate({
-            right: 0
+            top: 0
         }, 500)
     }).mouseleave(function () {
         $(this).stop(true).animate({
-            right: -270
+            top: -820
         }, 500)
     })
 

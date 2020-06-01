@@ -17,8 +17,8 @@ button {
 
 body {
   height: 100%;
-  width: 100%; 
-  background:#ffffff;}
+  width: 100%;
+  background: #ffffff; }
 
 li {
   list-style: none; }
@@ -29,267 +29,253 @@ img {
 a {
   text-decoration: none;
   color: #000000; }
+
 .stickheader {
-    height: 130px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    /* z-index: -1; */ }
-  
-  .stickheader .header {
-    height: 80px;
-    background: black;
-    /* width: 100%; */ }
-  
-  .header img {
-    /* width: 163px; */
-    height: 80px;
-    margin-left: 30px;
-    float: left; }
-  
-  .right-header {
-    float: right; }
-  
-  .iconfont {
-    /* background: #ffffff; */
-    line-height: 80px;
-    font-size: 20px;
-    color: #333333; }
-  
-  .shil1 {
-    font-size: 30px;
-    /* display: block; */
-    height: 50px;
-    /* background: #ffffff; */
-    float: right;
-    margin-right: 15px; }
-  
-  /* .log {
+  height: 130px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  /* z-index: -1; */ }
+
+.stickheader .header {
+  height: 80px;
+  background: black;
+  /* width: 100%; */ }
+
+.header img {
+  /* width: 163px; */
+  height: 80px;
+  margin-left: 30px;
+  float: left; }
+
+.right-header {
+  float: right; }
+
+.iconfont {
+  /* background: #ffffff; */
+  line-height: 80px;
+  font-size: 20px;
+  color: #333333; }
+
+.shil1 {
+  font-size: 30px;
+  /* display: block; */
+  height: 50px;
+  /* background: #ffffff; */
+  float: right;
+  margin-right: 15px; }
+
+/* .log {
     float: right;
     width: 150px;
     margin-right: 50px;
     line-height: 80px;
     color: #ffffff;
     font-size: 12px; } */
-  
-  .shil2 {
-    font-size: 30px;
-    /* display: block; */
-    height: 50px;
-    /* background: #ffffff; */
-    float: right; }
-  
-  .shop {
-    float: right;
-    margin-right: 50px;
-    line-height: 80px;
-    color: #ffffff;
-    font-size: 12px; }
-  
-  .shop div {
-    margin-top: 25px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 15px;
-    background: red;
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 30px; }
-  
-  .shil3 {
-    /* font-size: 30px; */
-    /* display: block; */
-    height: 50px;
-    /* background: #ffffff; */
-    float: right; }
-  
-  /* 头部第二行 */
-  .navigation {
-    background: #464646;
-    height: 50px;
-    /* margin: 0px auto; */ }
-  
-  .navigation .navigation-content {
-    margin: 0px auto;
-    width: 1000px;
-    display: flex;
-    justify-content: space-evenly; }
-  
-  .navigation-content li {
-    float: left;
-    /* margin-right: 80px; */
-    /* height: 50px; */
-    font-size: 18px;
-    line-height: 35px;
-    color: #ffffff;
-    /* margin: 0px auto; */ }
-  
-  .navigation-content li:last-child {
-    margin-right: 0; }
-  
-  /* 制作三角形 */
-  .navigation-content li div {
-    width: 0px;
-    height: 0px;
-    border-top: 10px solid #ffffff;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    margin: 0px auto; }
-  
-    .navigation-expended{
-      width: 100%;
-      background-color: #fff;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 101;
-      display: none;
-      opacity: 0;
-    }
-      .navigation-expended ul {
-        width: 1254px;
-        position: absolute;
-        bottom: -950px;
-        left: 20%;
-        display: flex;
-        flex-wrap: wrap;
-        /* border-bottom: 1px solid #999999; */
-        float:left;
-      }
-      
-      .show_item {
-      
-        float:left;
-        position: relative;
-        margin-right: 5%;
-      
-        text-align: center;
-      }
+.shopNum {
+  font-size: 30px;
+  display: block;
+  height: 50px;
+  /* background: #ffffff; */
+  float: right; } 
 
-      
+.shopCart {
+  float: right;
+  margin-right: 50px;
+  line-height: 80px;
+  color: #ffffff;
+  font-size: 12px; }
 
-.user ul li a{
-    color: #ffffff;
-}
-.right-header .user{
-    float: right;
-    width: 150px;
-    /* margin-right: 50px; */
-   
+.shopCart div {
+  margin-top: 25px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background: red;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 30px; } 
 
-    line-height: 80px;
-    font-size: 12px;
-}
+.shil3 {
+  /* font-size: 30px; */
+  /* display: block; */
+  height: 50px;
+  /* background: #ffffff; */
+  float: right; }
+
+/* 头部第二行 */
+.navigation {
+  background: #464646;
+  height: 50px;
+  /* margin: 0px auto; */ }
+
+.navigation .navigation-content {
+  margin: 0px auto;
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly; }
+
+.navigation-content li {
+  float: left;
+  /* margin-right: 80px; */
+  /* height: 50px; */
+  font-size: 18px;
+  line-height: 35px;
+  color: #ffffff;
+  /* margin: 0px auto; */ }
+
+.navigation-content li:last-child {
+  margin-right: 0; }
+
+/* 制作三角形 */
+.navigation-content li div {
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid #ffffff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin: 0px auto; }
+
+.navigation-expended {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  display: none;
+  opacity: 0; }
+
+.navigation-expended ul {
+  width: 1254px;
+  position: absolute;
+  bottom: -950px;
+  left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid #999999; */
+  float: left; }
+
+.show_item {
+  float: left;
+  position: relative;
+  margin-right: 5%;
+  text-align: center; }
+
+.user ul li a {
+  color: #ffffff; }
+
+.right-header .user {
+  float: right;
+  width: 150px;
+  /* margin-right: 50px; */
+  line-height: 80px;
+  font-size: 12px; }
+
 /* .user ul {
     float: left;
 } */
 .user ul:first-child {
-    display: block;
-}
+  display: block; }
+
 .user ul:last-child {
-    display: none;
-}
-.user ul li{
-        float: left;
-        line-height: 50px;
-        padding: 0 10px;
-        
-}
-.right-header .shil3{
+  display: none; }
 
-    height: 50px;
-    margin-right: 30px;
-    font-size: 30px;
-    float: right; 
+.user ul li {
+  float: left;
+  line-height: 50px;
+  padding: 0 10px; }
 
-}
+.right-header .shil3 {
+  height: 50px;
+  margin-right: 30px;
+  font-size: 30px;
+  float: right; }
+
 .islogin ul:first-child {
-    display: none;
-}
-.islogin ul:last-child {
-    display: block;
-}
-  
+  display: none; }
 
+.islogin ul:last-child {
+  display: block; }
 
 ul,
 ol {
-    list-style: none;
-}
+  list-style: none; }
+
 h3 {
-    height: 40px;
-}
+  height: 40px; }
+
 button:disabled {
-    cursor: not-allowed;
-}
+  cursor: not-allowed; }
+
 .shopping {
   width: 850px;
-    margin: 100px auto;
-    padding: 20px;
-    /* border: 1px solid #ccc; */
-    position: relative;
-    top: 195px;
-    height: 400px;
-}
+  margin: 100px auto;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  position: relative;
+  top: 195px;
+  height: 400px; }
+
 .shopping .left {
-    float: left;
-}
+  float: left; }
+
 .shopping .right {
-    float: right;
-    font-size: 32px;
-}
+  float: right;
+  font-size: 32px; }
+
 .shopping .girlImg {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    cursor: move;
-}
+  position: relative;
+  width: 200px;
+  height: 200px;
+  cursor: move; }
+
 .shopping .girlImg img {
-    width: 100%;
-    height: 100%;
-}
+  width: 100%;
+  height: 100%; }
+
 .shopping .girlImg span {
-    display: none;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background: rgba(255, 255, 0, 0.3);
-    left: 0;
-    top: 0;
-}
+  display: none;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: rgba(255, 255, 0, 0.3);
+  left: 0;
+  top: 0; }
+
 .imgList {
-    width: 220px;
-    margin-top: 20px;
-}
+  width: 220px;
+  margin-top: 20px; }
+
 .imgList li {
-    float: left;
-    margin-right: 8px;
-    border: 2px solid transparent;
-}
+  float: left;
+  margin-right: 8px;
+  border: 2px solid transparent; }
+
 .imgList .ac {
-    border: 2px solid skyblue;
-}
+  border: 2px solid skyblue; }
+
 .imgList li img {
-    width: 40px;
-    display: block;
-}
-.right h3{
-  margin-bottom: 22px;
-}
+  width: 40px;
+  display: block; }
+
+.right h3 {
+  margin-bottom: 22px; }
+
 .price {
-    height: 50px;
-    font-size: 30px;
-    color: goldenrod;
-    font-weight: bold;
-}
+  height: 50px;
+  font-size: 30px;
+  color: goldenrod;
+  font-weight: bold; }
+
 .priceList {
-    overflow: hidden;
-    margin: 20px 0;
-}
+  overflow: hidden;
+  margin: 20px 0; }
+
 .priceList li {
   float: left;
   height: 40px;
@@ -297,73 +283,137 @@ button:disabled {
   padding: 9px 10px;
   border: 2px solid #999;
   margin-right: 10px;
-  cursor: pointer;
-}
-.priceList .ac {
-    border: 2px solid #532a2a;
-}
-.changeNum {
-    position: relative;
-    margin: 20px 0;
-}
-.changeNum input {
-    width: 40px;
-    height: 41px;
-    text-align: center;
-    line-height: 40px;
-    border: 1px solid #ccc;
-}
-.changeNum button {
-    height: 22px;
-    width: 20px;
-    background: none;
-    border: 1px solid #ccc;
-    position: absolute;
-}
-.changeNum .addBtn {
-    left: 41px;
-    top: 8px;
-}
-.changeNum .subBtn {
-    left: 41px;
-    top: 29px;
-}
-.okBtn {
-    height: 30px;
-    width: 100px;
-}
-.bigBox {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 230px;
-    display: none;
-    overflow: hidden;
-}
-.bigBox img {
-    position: absolute;
-    width: 480px;
-    height: 480px;
-    background: #ffffff;
-}
+  cursor: pointer; }
 
-.shopCart {
-    position: fixed;
-    right: 0;
-    top: 200px;
-    color: #464644;
-}
+.priceList .ac {
+  border: 2px solid #532a2a; }
+
+.changeNum {
+  position: relative;
+  margin: 20px 0; }
+
+.changeNum input {
+  width: 40px;
+  height: 41px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc; }
+
+.changeNum button {
+  height: 22px;
+  width: 20px;
+  background: none;
+  border: 1px solid #ccc;
+  position: absolute; }
+
+.changeNum .addBtn {
+  left: 41px;
+  top: 8px; }
+
+.changeNum .subBtn {
+  left: 41px;
+  top: 29px; }
+
+.okBtn {
+  height: 30px;
+  width: 100px; }
+
+.bigBox {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 230px;
+  display: none;
+  overflow: hidden; }
+
+.bigBox img {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  background: #ffffff; }
+
+/* .shopCart {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  color: #464644; }
+
 .shopNum {
-    width: 60px;
-    height: 25px;
-    background: red;
-    color: black;
-    text-align: center;
-    line-height: 25px;
-}
+  width: 60px;
+  height: 25px;
+  background: red;
+  color: black;
+  text-align: center;
+  line-height: 25px; } */
+
 .active {
-    width: 25px;
-    height: 25px;
-    background: skyblue;
-    position: absolute;
-}
+  width: 25px;
+  height: 25px;
+  background: skyblue;
+  position: absolute; }
+
+.footer-wrapper {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: -217px;
+  background-color: #000;
+  color: #fff;
+  z-index: 100; }
+
+.footer {
+  height: 200px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  text-align: center; }
+
+.footer ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; }
+
+.footer .footer-list li {
+  display: inline-block;
+  /* *display: inline; */
+  zoom: 1;
+  margin: 0 10px; }
+
+.footer .footer-list li a {
+  color: #fff; }
+
+.primary-logo {
+  width: 133px;
+  height: 100px;
+  position: absolute;
+  background: url(../images/kuangwei/QQ图片20200524140402.png) 0 0 no-repeat transparent;
+  left: 50%;
+  font-size: inherit;
+  top: 11%;
+  margin: -10px 0 0 -66px;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5); }
+
+.footer .footer-bottom {
+  bottom: 70px;
+  display: block;
+  margin: 12px auto;
+  position: absolute;
+  text-align: center;
+  width: 103%;
+  left: 0%; }
+
+.footer .footer-bottom a {
+  color: #fff; }
+
+.tip-for-fraud {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 62%;
+  left: 44%; }
